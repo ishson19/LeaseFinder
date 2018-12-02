@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    </head>
+
+    <body>
+        <div class="top" style="text-align:center">
+            <form align="right" name="form1" method="post" action="log_out.php">
+                    <label class="logoutLblPos">
+                    <input name="submit2" type="submit" id="submit2" value="Logout">
+                    </label>
+                </form>
+            <h1 style="color:whitesmoke">Welcome Sample Person!</h1>
+
+        </div>
+        <div id="welcome">
+            <p>
+                This is your profile page. You may look at all the apartments you have put up for renting/subleasing. If you have gotten an offer you may delete your post. 
+            </p>
+        </div>
+
+        <div class="container" id="makePost">
+            <p>
+                First Name: Sample<br><br>
+                Last Name: McSampleson<br><br>
+                Username: sample@gmail.com<br><br>
+                Phone: 111-111-111
+            </p>
+        </div>
+
+        <br>
+        <br>
+        
+        <div id="posts">
+            <!--a table of all the posts. One of the columns should be a "buy" button. If user logged in matches user who posted
+                the post, the "buy" button will be replaced with a "remove" button. 
+                Row will look like:
+                date posted, post name, description, contact info (phone and name), button
+            
+                -->
+            <table id="postTable">
+                <tr>
+                    <th>Apartment</th>
+                    <th>Description</th>
+                    <th>Contact info</th>
+                    <th>Delete Post</th>
+                </tr>
+                <tr>
+                    <td>Athens Heights</td>
+                    <td>Located in 1234 Sample Way; competitive prices.</td>
+                    <td>Phone: 111-111-1111</td>
+                    <td>
+                      <!--change this to delete button or like onclick-->
+                      <input name="submit4" type="submit" id="submit2" value="Delete">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>
