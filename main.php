@@ -49,20 +49,19 @@
         </div>
         <div id="welcome">
             <p>
-                Welcome to this wonderous renting page! Please feel free to make posts and browse our wonderous selection!
+                Welcome to our renting page! Please feel free to make posts and browse our selection.
             </p>
        </div>
 
 
         <div class="container" id="makePost">
-            <!-- maybe it could look sort of like facebook's post making thing?-->
+           
             <form id="makePostForm" method="post" action="insert.php">
                 Apartment:<br>
                 <input type="text" id="postNameInput" name="aptname"><br>
                 Description:<br>
                 <input type="text" id="postDescInput" name="description"><br>
-                <!--I don't know if to make an input for contact info
-                    because it should be part of their user info-->
+               
                 <input type="submit" value="Submit"><br><br>
             </form>
         </div>
@@ -76,8 +75,7 @@
                 Row will look like:
                 date posted, post name, description, contact info (phone and name), button
 
-                If you think of something to add, please tell everyone else so that we can still get the button node for other
-                functions.-->
+             -->
             <table id="postTable">
                 <tr>
                     <th>Seller</th>
@@ -117,7 +115,7 @@
 
         <br><br>
         <div style="text-align:center" class="container" id="contactUs">
-            <!--At the bottom of a lot of pages, there's a "contact us" little area. We could do something like that?-->
+            <!--At the bottom of a lot of pages, there's a "contact us" little area.-->
             <h2>Contact Us!</h2>
             <p>Phone: 123-123-1234; Email:amazingAdmins@sample.com</p>
         </div>
