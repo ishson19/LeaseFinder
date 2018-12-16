@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Register</title>
+
+</head>
+<body>
+
+  <div class="top" style="text-align:center">
+      <h1 style="color:whitesmoke">Register</h1>
+  </div>
+
+  <!--This form calls the register controller via POST method -->
+  <form method="POST" action="registerController.php">
+    <div class="container">
+      <label for="first-name">First Name:</label> <br>
+      <input type="text" name="first-name" id="first-name" placeholder="John" required /><br><br>
+      <label for="last-name">Last Name:</label><br>
+      <input type="text" name="last-name" id="last-name" placeholder="Smith" required /><br><br>
+
+      <label for="contact">Phone Number:</label><br>
+      <input type="text" name="contact" id="contact" placeholder="123-123-1234" required /><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" name="email" id="email" required placeholder="your email"><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" name="password" id="password" pattern=".{5,10}" placeholder="your password" required title="5 to 10 charact\
+ers"><br> <br>
+
+      <label for="checkbox">I agree to the terms and conditions</label>
+      <input type="checkbox" name="checkbox" id="checkbox" /><br><br>
+
+      <input type="submit" value="Submit" /><br>
+    </div>
+  </form>
+
+</body>
+</html>
